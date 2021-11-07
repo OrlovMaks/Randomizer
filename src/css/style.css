@@ -1,0 +1,96 @@
+input:focus {outline: 0;}
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+}
+input[type='number'] {
+    -moz-appearance: textfield;
+}
+
+body{
+    background-image: url(../img/1616048699_3-p-fon-maiami-4.jpg);
+    background-position: 40% 10%;
+    font-size: 24px;
+    color: rgb(19, 27, 53);
+    font-weight: 700;
+}
+input[type="number"]{
+    text-align: center;
+    font-size: 24px;
+}
+.gameArea{
+    background-image: url(../img/Без\ имени-1.jpg);
+    display: flex;
+    flex-direction: column;
+    height: 550px;
+    width: 550px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 7%;
+    justify-content: space-between;
+    align-items: center;
+    text-align: center;
+    border: 5px solid #5e476d77;
+    border-radius: 20px;
+}
+.gameArea:hover{
+    box-shadow: 0 0 20px 10px #f46ecc;
+}
+.header{
+    margin-top: 20px;
+}
+.logo{
+    width: 450px;
+}
+.minValue{
+    height: 30px;
+    border: 5px solid #f46ecc;
+    border-radius: 20px;
+    background-color: #f46ecc31;
+    margin-top: -50px;
+}
+.minValue:focus{
+    box-shadow: 0 0 20px 10px #f46ecc;
+}
+.maxValue{
+    height: 30px;
+    border: 5px solid #f46ecc;
+    border-radius: 20px;
+    background-color: #f46ecc31;
+    margin-top: -50px;
+}
+.maxValue:focus{
+    box-shadow: 0 0 20px 10px #f46ecc;
+}
+.buttGen{
+    width: 140px;
+    height: 50px;
+    font-size: 20px;
+    margin-top: 20px;
+    border: 5px solid #f46ecc;
+    border-radius: 20px;
+    background-color: #6ecaf431;
+    font-weight: 700;
+    color:rgb(19, 27, 53);
+}
+.buttGen:hover{
+    box-shadow: 0 0 20px 10px #f46ecc;
+}
+
+.buttRes{
+    width: 100px;
+    height: 30px;
+    font-size: 20px;
+    padding-bottom: 25px;
+    border: 5px solid #f46ecc;
+    border-radius: 15px;
+    background-color: #6ecaf431;
+    font-weight: 700;
+    color:rgb(19, 27, 53);
+}
+.buttRes:hover{
+    box-shadow: 0 0 20px 10px #f46ecc;
+}
+.reset{
+    margin-bottom: 30px;
+}
