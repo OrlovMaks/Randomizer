@@ -8,7 +8,6 @@ function createCheckArray(min, max) {
         checkedNum[i] = false;
     }
 }
-
 minVal.addEventListener("click", function () {
     createCheckArray(Math.ceil(minVal.value), Math.floor(maxVal.value));
 })
@@ -16,8 +15,6 @@ minVal.addEventListener("click", function () {
 maxVal.addEventListener("click", function () {
     createCheckArray(Math.ceil(minVal.value), Math.floor(maxVal.value));
 })
-
-
 buttGen.addEventListener("click", function () {
     let isShowed = true;
     for (let i = Math.ceil(minVal.value); i <= Math.floor(maxVal.value); i++)
@@ -34,7 +31,11 @@ buttGen.addEventListener("click", function () {
                 break;
             }
         }
+    else if (minVal.value > maxVal.value) {
+        document.querySelector(".resArea").innerHTML = minVal.value + " больше максимального числа диапазона!"
+    }
     else {
+        buttGen.style.opacity = "0.3";
         buttGen.setAttribute("disabled", "disabled");
         document.querySelector(".resArea").innerHTML = 'Нажмите "Reset" что б начать заново!';
     }
@@ -42,8 +43,8 @@ buttGen.addEventListener("click", function () {
 function getRandomNum(min, max) {
     return Math.floor(Math.random() * (max - min + 1)) + min;
 }
-
 document.querySelector('.buttRes').onclick = () => {
+    buttGen.style.opacity = "1";
     document.querySelector(".resArea").innerHTML = 'Введите диапазон чисел!';
     buttGen.removeAttribute("disabled", "disabled");
     createCheckArray(Math.ceil(minVal.value), Math.floor(maxVal.value));

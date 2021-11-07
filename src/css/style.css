@@ -5,6 +5,11 @@ input::-webkit-inner-spin-button {
 }
 input[type='number'] {
     -moz-appearance: textfield;
+    text-align: center;
+    font-size: 24px;
+    font-weight: 700;
+    color: rgb(26, 37, 75); 
+
 }
 
 body{
@@ -13,10 +18,6 @@ body{
     font-size: 24px;
     color: rgb(19, 27, 53);
     font-weight: 700;
-}
-input[type="number"]{
-    text-align: center;
-    font-size: 24px;
 }
 .gameArea{
     background-image: url(../img/Без\ имени-1.jpg);
@@ -32,9 +33,13 @@ input[type="number"]{
     text-align: center;
     border: 5px solid #5e476d77;
     border-radius: 20px;
+    -webkit-transition: all 0.3s ease;;
+  -moz-transition: all 0.3s ease;;
+  -o-transition: all 0.3s ease;;
+  transition: all 0.3s ease
 }
 .gameArea:hover{
-    box-shadow: 0 0 20px 10px #f46ecc;
+    box-shadow: 0 0 30px 20px #f46ecc;
 }
 .header{
     margin-top: 20px;
@@ -72,9 +77,19 @@ input[type="number"]{
     background-color: #6ecaf431;
     font-weight: 700;
     color:rgb(19, 27, 53);
+    cursor: pointer;
 }
+
 .buttGen:hover{
+    -webkit-transform: scale(1.2);
+    -ms-transform: scale(1.2);
+    transform: scale(1.2);
+    -webkit-transition: all 0.5s ease;;
+    -moz-transition: all 0.5s ease;;
+    -o-transition: all 0.5s ease;;
+    transition: all 0.5s ease;
     box-shadow: 0 0 20px 10px #f46ecc;
+
 }
 
 .buttRes{
@@ -87,10 +102,19 @@ input[type="number"]{
     background-color: #6ecaf431;
     font-weight: 700;
     color:rgb(19, 27, 53);
+    cursor: pointer;
 }
 .buttRes:hover{
+    -webkit-transform: scale(1.2);
+    -ms-transform: scale(1.2);
+    transform: scale(1.2);
+    -webkit-transition: all 0.3s ease;;
+    -moz-transition: all 0.3s ease;;
+    -o-transition: all 0.3s ease;;
+    transition: all 0.3s ease;
     box-shadow: 0 0 20px 10px #f46ecc;
 }
+
 .reset{
     margin-bottom: 30px;
 }
